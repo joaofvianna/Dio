@@ -1,0 +1,47 @@
+body {
+    background-color: antiquewhite;
+}
+
+.foto {
+    border-radius: 100%;
+    border: 3px solid black;
+}
+
+#titulo {
+    color: rgb(5, 99, 99);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.subtitulo {
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.post {
+    background-color: rgba(5, 5, 126, 0.308);
+    padding: 15px;
+    border: 3px solid black;
+    margin-bottom: 10px;
+}
+
+.titulo_post {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    text-decoration: double;
+    margin: 0px;
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+    text-decoration: line-through;
+}
+
+
+.conteudo_post {
+    margin: 0px;
+    margin-bottom: 15px;
+
+}
