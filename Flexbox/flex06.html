@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align items</title>
+    
+    <style>
+        .container {
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        .item {
+            background-color: brown;
+            margin: 5px;
+            color:  white;
+            text-align: center;
+            flex: 1;
+        }
+
+        .flex {
+            flex: 1;
+        }
+
+        .center {
+            align-items: center;
+        }
+
+        .stretch {
+            align-items: stretch;
+        }
+
+        .flex-start {
+            align-items: flex-start;
+        }
+
+        .flex-end {
+            align-items: flex-end;
+        }
+
+        .baseline {
+            align-items: baseline;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+
+        .central {
+            height: 300px;
+            justify-content: center;
+            
+        }
+
+        .central .item {
+            flex: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Row</h1>
+    <h1>center</h1>
+    <section class="container center flex">
+        <div class="item">1</div>
+        <div class="item">dois</div>
+        <div class="item">three teste do teste</div>
+    </section>
+
+    <h1>strecth</h1>
+    <section class="container center stretch">
+        <div class="item">1</div>
+        <div class="item">dois</div>
+        <div class="item">three teste do teste relacionado ao teste</div>
+    </section>
+
+    <h1>flex-start</h1>
+    <section class="container center flex-start">
+        <div class="item">1</div>
+        <div class="item">dois</div>
+        <div class="item">three teste do teste relacionado ao teste</div>
+    </section>
+
+    <h1>flex-end</h1>
+    <section class="container center flex-end">
+        <div class="item">1</div>
+        <div class="item">dois</div>
+        <div class="item">three teste do teste relacionado ao teste</div>
+    </section>
+
+    <h1>baseline</h1>
+    <section class="container center baseline">
+        <div class="item"><br>1</div>
+        <div class="item">dois</div>
+        <div class="item">three teste do teste relacionado ao teste</div>
+    </section>
+
+    
+    <h1>Column</h1>
+
+    <p>flex-start</p>
+    <section class="container center flex-start column">
+        <div class="item">1</div>
+        <div class="item">dois</div>
+        <div class="item">three teste do teste relacionado ao teste</div>
+    </section>
+
+    <p>flex-end</p>
+    <section class="container center flex-end column">
+        <div class="item">1</div>
+        <div class="item">dois</div>
+        <div class="item">three teste do teste relacionado ao teste</div>
+    </section>
+
+    <h1>center</h1>
+    <section class="container center flex column">
+        <div class="item">1</div>
+        <div class="item">dois</div>
+        <div class="item">three teste do teste</div>
+    </section>
+
+    <h1>baseline</h1>
+    <section class="container center baseline column">
+        <div class="item"><br>1</div>
+        <div class="item">dois</div>
+        <div class="item">three teste do teste relacionado ao teste</div>
+    </section>
+
+    <p>alinhamento Central</p>
+    <section class="container central center">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos asperiores</div>
+    </section>
+</body>
+</html>
